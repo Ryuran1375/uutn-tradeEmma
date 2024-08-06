@@ -23,7 +23,4 @@ const productSchema = new mongoose.Schema({
   }
 });
 
-// Creación del modelo Producto
-const products = mongoose.model('products', productoSchema);
-
-module.exports = products;
+module.exports = mongoose.model('Product', productSchema);
